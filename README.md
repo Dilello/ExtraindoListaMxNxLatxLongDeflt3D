@@ -17,7 +17,7 @@ As Fronteiras podem mudar de nome também (East, West, South). Caso isso aconte�
 
 Segue abaixo o trecho onde se deve fazer as alterações:
 
-'''python
+'''
 
     if fronteira == 'East':
         df_Bruto = pd.DataFrame(BrutoLatLong[1:,:4], columns = ['Long','Lat','iD1','iD2'])
