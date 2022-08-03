@@ -8,7 +8,7 @@
 
 3 - Extrair do arquivo .bnd do seu modelo no Delft3D, os limites M e N de cada trecho da condição de contorno e salvar como arquivo .csv (2º arquivo);
 
-## Observações que precisar se mudadas, caso mude de projeto
+## Observações importantes caso mude de projeto
 
 Inspecione o 1º arquivo e verifice qual foi ordenamento dos pontos. Pode se que varie de um arquivo para o outro, sendo necessário as vezes descartar 
 as primeiras linha e selecionar as linhas de 2 em 2. Para tal, abra visualize a malha no GUI do Delft e compare as lat e long dos vertices com as lat 
@@ -17,7 +17,6 @@ As Fronteiras podem mudar de nome também (East, West, South). Caso isso aconte�
 
 Segue abaixo o trecho onde se deve fazer as alterações:
 
-'''
 
     if fronteira == 'East':
         df_Bruto = pd.DataFrame(BrutoLatLong[1:,:4], columns = ['Long','Lat','iD1','iD2'])
@@ -33,6 +32,6 @@ Segue abaixo o trecho onde se deve fazer as alterações:
         df1_FronteiraTotal = df_Bruto.loc[df_Bruto['iD2'] == 0]
     else:
         df1_FronteiraTotal = df_Bruto.loc[df_Bruto['iD2'] == 4]
- '''
+ 
 
 
