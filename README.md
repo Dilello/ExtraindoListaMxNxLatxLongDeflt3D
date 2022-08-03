@@ -10,10 +10,10 @@
 
 ## Observações importantes caso mude de projeto
 
-Inspecione o 1º arquivo e verifice qual foi ordenamento dos pontos. Pode se que varie de um arquivo para o outro, sendo necessário as vezes descartar 
-as primeiras linha e selecionar as linhas de 2 em 2. Para tal, abra visualize a malha no GUI do Delft e compare as lat e long dos vertices com as lat 
+Inspecione o 1º arquivo e verifice qual foi o ordenamento dos pontos. Pode se que tenha variação de um arquivo para o outro, sendo necessário, as vezes, descartar 
+as primeiras linha e selecionar as linhas de 2 em 2. Para tal, abra e visualize a malha no GUI do Delft e compare as lat e long dos vertices com as lat 
 e long das primeiras linhas do 1º arquivo. Depois compare com o código (linha 18, 20, 22, 38, 40, 42).
-As Fronteiras podem mudar de nome também (East, West, South). Caso isso aconteça, mude os nomes no código (linhas 17, 19, 37 e 39).
+As Fronteiras também podem mudar de nome (East, West, South). Caso isso aconteça, mude os nomes no código (linhas 17, 19, 37 e 39).
 
 Segue abaixo o trecho onde se deve fazer as alterações:
 
