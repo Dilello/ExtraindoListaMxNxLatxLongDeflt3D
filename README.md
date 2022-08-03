@@ -26,7 +26,7 @@ Segue abaixo o trecho onde se deve fazer as alterações:
         df_Bruto = pd.DataFrame(BrutoLatLong[1:,:4], columns = ['Long','Lat','iD1','iD2'])
   [...]
   
-      if fronteira == 'East':
+    if fronteira == 'East':
         df1_FronteiraTotal = df_Bruto.loc[df_Bruto['iD2'] == 3]
     elif fronteira == 'South':
         df1_FronteiraTotal = df_Bruto.loc[df_Bruto['iD2'] == 0]
